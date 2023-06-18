@@ -1,8 +1,8 @@
-import '../styles/Tile.css';
+import "../styles/Tile.css";
 
-const Tile = ({value,tileTestId}) =>{
+const Tile = ({value, tileTestId, onClick}) =>{
     return(
-        <button data-testid={tileTestId} className='tile'>
+        <button data-testid={tileTestId} className="tile" onClick={onClick}>
             {value}
         </button>
     )
