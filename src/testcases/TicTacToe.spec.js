@@ -59,6 +59,16 @@ describe("TicTacToe game works fine when" , () => {
     });
   });
 
+  it("should display O on clicking the second tile", () => {
+    const [firstTile, secondTile] = tiles
+    tiles.forEach((tile) => {
+      checkTileSymbolOnClicking(firstTile,ConstantsTest.Player_X);
+      checkTileSymbolOnClicking(secondTile,ConstantsTest.Player_O);
+    });
+  });
+
+
+
 });
 
 
